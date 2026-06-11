@@ -14,10 +14,10 @@ const transporter = nodemailer.createTransport({
 
 transporter.verify()
 .then(()=>{
-    console.log("Server is connected to SMPT server")
+    console.log("Server is connected to SMPT server and Email transporter is ready to send emails")
 })
 .catch((err)=>{
-    console.error(err)
+    console.error("Email transporter verification failed:", err);
 })
 
 
