@@ -46,9 +46,11 @@ const Login = () => {
   return (
     <>
       <section className='min-h-screen bg-zinc-950 px-4 py-10 text-zinc-100 sm:px-6 lg:px-8'>
-        <div className='mx-auto flex min-h-[85vh] w-full max-w-5xl items-center justify-center'>
+       
+        <div className='mx-auto flex flex-col gap-7 min-h-[85vh] w-full max-w-5xl items-center justify-center'>
+           <h1 className='text-4xl font-bold text-[#31b8c6]'>Welcome to Ukora</h1>
             <div className='w-full max-w-md rounded-2xl border border-[#31b8c6]/40 bg-zinc-900/70 p-8 shadow-2xl shadow-black/50 backdrop-blur'>
-                <h1 className='text-3xl font-bold text-[#31b8c6]'> Welcome Back</h1>
+                <h1 className='text-3xl font-bold text-[#31b8c6]'> Login</h1>
                 <p className='mt-2 text-sm text-zinc-300'>Please enter your email and password to login.</p>
                 <form onSubmit={onSubmit} className='mt-8 space-y-5'>
                     <div>
