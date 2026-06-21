@@ -4,9 +4,9 @@
 
 ### AI-Powered Search Engine with Real-Time Web Intelligence
 
-Ukora is a modern AI-powered search and answer engine that combines the capabilities of **Gemini AI**, **Mistral AI**, and **Tavily Search** to deliver intelligent, context-aware, and source-backed responses.
+uk-perplexity is a modern AI-powered search and answer engine that combines the capabilities of **Gemini AI**, **Mistral AI**, and **Tavily Search** to deliver intelligent, context-aware, and source-backed responses.
 
-Built with a scalable full-stack architecture using **React**, **Redux Toolkit**, **Node.js**, **Express.js**, and **MongoDB**, Ukora provides a seamless conversational search experience similar to modern AI search platforms.
+Built with a scalable full-stack architecture using **React**, **Redux Toolkit**, **Node.js**, **Express.js**, and **MongoDB**, uk-perplexity provides a seamless conversational search experience similar to modern AI search platforms.
 
 ![React](https://img.shields.io/badge/React-19-blue)
 ![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
@@ -273,7 +273,7 @@ Login
 JWT Token Generated
         │
         ▼
-Access Ukora Features
+Access uk-perplexity Features
 ```
 
 ---
@@ -362,9 +362,9 @@ Add screenshot here
 
 ### Ugrashen Kumar
 
-Frontend Developer | Full Stack Developer
+Frontend Developer
 
-📧 Email: your-email@example.com
+📧 Email: ugrashen1992@gmail.com
 
 🐙 GitHub: https://github.com/ugrashen-kumar
 
