@@ -5,6 +5,11 @@ import authRouter from './routes/auth.routes.js'
 import chatRouter from './routes/chat.routs.js'
 import morgan from 'morgan'
 import cors from "cors";
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const app = express()
 
@@ -32,6 +37,13 @@ app.get('/', (req, res)=>{
 
 app.use('/api/auth', authRouter)
 app.use('/api/chats', chatRouter)
+
+app.use(
+  express.static(
+    path.join(__dirname, "../public")
+  )
+);
+console.log(path.join(__dirname, "../public"));
 
 
 export default app
