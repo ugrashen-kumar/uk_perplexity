@@ -31,7 +31,7 @@ export const register = async (req, res) => {
                 <p>Hi ${username},</p>
                 <p>Thank you for registering at <strong>UK Perplexity</strong>. We're excited to have you on board!</p>
                 <p>Please verify your email address by clicking the link below:</p>
-                <a href="http://localhost:3000/api/auth/verify-email?token=${emailVerificationToken}">Verify Email</a>
+                <a href="${process.env.BASE_URL}/api/auth/verify-email?token=${emailVerificationToken}">Verify Email</a>
                 <p>If you did not create an account, please ignore this email.</p>
                 <p>Best regards,<br>The UK Perplexity Team</p>
         `,
@@ -68,7 +68,7 @@ export const verifyEmail = async (req, res) => {
 
     const html = `<h1>Email Verified Successfully!</h1>
     <p>Your email has been verified. You can now log in to your account.</p>
-    <a href="http://localhost:3000/login">Go to Login</a>
+    <a href="${process.env.BASE_URL}/login">Go to Login</a>
     `;
 
     res.send(html);
