@@ -27,13 +27,13 @@ app.use(
 
 
 // health chech 
-app.get('/', (req, res)=>{
-    res.send(
-        {
-            message : "Server is running"
-        }
-    )
-})
+// app.get('/', (req, res)=>{
+//     res.send(
+//         {
+//             message : "Server is running"
+//         }
+//     )
+// })
 
 app.use('/api/auth', authRouter)
 app.use('/api/chats', chatRouter)
@@ -43,6 +43,12 @@ app.use(
     path.join(__dirname, "../public")
   )
 );
+// React SPA fallback
+app.get("*", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../public", "index.html")
+  );
+});
 console.log(path.join(__dirname, "../public"));
 
 
